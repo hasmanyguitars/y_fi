@@ -1,0 +1,3 @@
+module YFi
+  # Your code goes here...
+end
