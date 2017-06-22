@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/hasmanyguitars/y_fi.svg?style=svg)](https://circleci.com/gh/hasmanyguitars/y_fi)
+
 # YFi
 This is a Ruby implementation for fetching stock/fund prices from the Yahoo Finance API with YQL: https://developer.yahoo.com/yql/faq/
 
