@@ -13,8 +13,8 @@ module YFi
     end
 
     # @param ticker [String]
-    # @example Api::ExternalFund.find_by_ticker('AAPL')
-    # @return [Api::ExternalFund]
+    # @example YFi::Quote.find_by_ticker('AAPL')
+    # @return [YFi::Quote]
     def self.find_by_ticker(ticker)
       QuoteCollection.new([ticker]).first
     end
