@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://query.yahooapis.com/v1/public/yql?env=store://datatables.org/alltableswithkeys&format=json&q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in(%22AAPL%22,%22VOO%22)
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 22 Jun 2017 17:39:51 GMT
+      Age:
+      - '0'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Via:
+      - http/1.1 a33.ue.gq1.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+    body:
+      encoding: UTF-8
+      string: '{"query":{"count":2,"created":"2017-06-22T17:39:51Z","lang":"en-US","results":{"quote":[{"symbol":"AAPL","Ask":"146.36","AverageDailyVolume":"27239900","Bid":"146.35","AskRealtime":null,"BidRealtime":null,"BookValue":"25.76","Change_PercentChange":"+0.49
+        - +0.34%","Change":"+0.49","Commission":null,"Currency":"USD","ChangeRealtime":null,"AfterHoursChangeRealtime":null,"DividendShare":"2.52","LastTradeDate":"6/22/2017","TradeDate":null,"EarningsShare":"8.52","ErrorIndicationreturnedforsymbolchangedinvalid":null,"EPSEstimateCurrentYear":"8.94","EPSEstimateNextYear":"10.57","EPSEstimateNextQuarter":"1.89","DaysLow":"145.12","DaysHigh":"146.70","YearLow":"91.50","YearHigh":"156.65","HoldingsGainPercent":null,"AnnualizedGain":null,"HoldingsGain":null,"HoldingsGainPercentRealtime":null,"HoldingsGainRealtime":null,"MoreInfo":null,"OrderBookRealtime":null,"MarketCapitalization":"763.10B","MarketCapRealtime":null,"EBITDA":"69.72B","ChangeFromYearLow":"54.86","PercentChangeFromYearLow":"+59.96%","LastTradeRealtimeWithTime":null,"ChangePercentRealtime":null,"ChangeFromYearHigh":"-10.29","PercebtChangeFromYearHigh":"-6.57%","LastTradeWithTime":"1:24pm
+        - <b>146.36</b>","LastTradePriceOnly":"146.36","HighLimit":null,"LowLimit":null,"DaysRange":"145.12
+        - 146.70","DaysRangeRealtime":null,"FiftydayMovingAverage":"151.25","TwoHundreddayMovingAverage":"136.05","ChangeFromTwoHundreddayMovingAverage":"10.31","PercentChangeFromTwoHundreddayMovingAverage":"+7.58%","ChangeFromFiftydayMovingAverage":"-4.89","PercentChangeFromFiftydayMovingAverage":"-3.23%","Name":"Apple
+        Inc.","Notes":null,"Open":"145.77","PreviousClose":"145.87","PricePaid":null,"ChangeinPercent":"+0.34%","PriceSales":"3.45","PriceBook":"5.66","ExDividendDate":"5/11/2017","PERatio":"17.17","DividendPayDate":"5/18/2017","PERatioRealtime":null,"PEGRatio":"1.47","PriceEPSEstimateCurrentYear":"16.37","PriceEPSEstimateNextYear":"13.85","Symbol":"AAPL","SharesOwned":null,"ShortRatio":"2.33","LastTradeTime":"1:24pm","TickerTrend":null,"OneyrTargetPrice":"157.58","Volume":"10215019","HoldingsValue":null,"HoldingsValueRealtime":null,"YearRange":"91.50
+        - 156.65","DaysValueChange":null,"DaysValueChangeRealtime":null,"StockExchange":"NMS","DividendYield":"1.72","PercentChange":"+0.34%"},{"symbol":"VOO","Ask":"224.50","AverageDailyVolume":"1967870","Bid":"224.49","AskRealtime":null,"BidRealtime":null,"BookValue":"0.00","Change_PercentChange":"+0.38
+        - +0.17%","Change":"+0.38","Commission":null,"Currency":"USD","ChangeRealtime":null,"AfterHoursChangeRealtime":null,"DividendShare":null,"LastTradeDate":"6/22/2017","TradeDate":null,"EarningsShare":null,"ErrorIndicationreturnedforsymbolchangedinvalid":null,"EPSEstimateCurrentYear":null,"EPSEstimateNextYear":null,"EPSEstimateNextQuarter":"0.00","DaysLow":"223.87","DaysHigh":"224.66","YearLow":"182.27","YearHigh":"225.77","HoldingsGainPercent":null,"AnnualizedGain":null,"HoldingsGain":null,"HoldingsGainPercentRealtime":null,"HoldingsGainRealtime":null,"MoreInfo":null,"OrderBookRealtime":null,"MarketCapitalization":null,"MarketCapRealtime":null,"EBITDA":null,"ChangeFromYearLow":"42.24","PercentChangeFromYearLow":"+23.17%","LastTradeRealtimeWithTime":null,"ChangePercentRealtime":null,"ChangeFromYearHigh":"-1.26","PercebtChangeFromYearHigh":"-0.56%","LastTradeWithTime":"1:24pm
+        - <b>224.51</b>","LastTradePriceOnly":"224.51","HighLimit":null,"LowLimit":null,"DaysRange":"223.87
+        - 224.66","DaysRangeRealtime":null,"FiftydayMovingAverage":"221.55","TwoHundreddayMovingAverage":"215.04","ChangeFromTwoHundreddayMovingAverage":"9.47","PercentChangeFromTwoHundreddayMovingAverage":"+4.40%","ChangeFromFiftydayMovingAverage":"2.96","PercentChangeFromFiftydayMovingAverage":"+1.34%","Name":"Vanguard
+        S&P 500 ETF","Notes":null,"Open":"224.17","PreviousClose":"224.13","PricePaid":null,"ChangeinPercent":"+0.17%","PriceSales":null,"PriceBook":null,"ExDividendDate":null,"PERatio":null,"DividendPayDate":null,"PERatioRealtime":null,"PEGRatio":"0.00","PriceEPSEstimateCurrentYear":null,"PriceEPSEstimateNextYear":null,"Symbol":"VOO","SharesOwned":null,"ShortRatio":null,"LastTradeTime":"1:24pm","TickerTrend":null,"OneyrTargetPrice":null,"Volume":"727790","HoldingsValue":null,"HoldingsValueRealtime":null,"YearRange":"182.27
+        - 225.77","DaysValueChange":null,"DaysValueChangeRealtime":null,"StockExchange":"PCX","DividendYield":null,"PercentChange":"+0.17%"}]}}}'
+    http_version: 
+  recorded_at: Thu, 22 Jun 2017 17:39:51 GMT
+recorded_with: VCR 3.0.3

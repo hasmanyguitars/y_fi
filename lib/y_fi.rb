@@ -1,3 +1,30 @@
+require "logger"
+
 module YFi
-  # Your code goes here...
+  class Configuration
+    attr_accessor :logger
+
+    def initialize
+      @logger ||= Logger.new(STDOUT)
+    end
+  end
+
+  class << self
+    attr_accessor :configuration
+  end
+
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
+  def self.reset
+    @configuration = Configuration.new
+  end
+
+  def self.configure
+    yield(configuration)
+  end
 end
+
+require 'y_fi/quote.rb'
+require 'y_fi/quote_collection.rb'
