@@ -11,7 +11,7 @@ YFi::QuoteCollection.new(['vbtlx', 'vigrx'])
 
 To get an individual quote:
 ```
-quote = YFi::Quote.find('aapl')
+quote = YFi::Quote.find_by_ticker('aapl')
 puts quote.price
 puts quote.updated_at
 puts quote.issuer_name
