@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/hasmanyguitars/y_fi/badges/gpa.svg)](https://codeclimate.com/github/hasmanyguitars/y_fi)
 [![CircleCI](https://circleci.com/gh/hasmanyguitars/y_fi.svg?style=svg)](https://circleci.com/gh/hasmanyguitars/y_fi)
 
 # YFi
