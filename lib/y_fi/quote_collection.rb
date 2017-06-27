@@ -1,8 +1,6 @@
 # Uses YAHOO's API service for fetching fund prices.
 # Example: 
-#   YFi::QuoteCollection.new(['vbtlx', 'vigrx'])
-# Will call the following URL:
-#   http://finance.yahoo.com/webservice/v1/symbols/VBTLX,VIGRX/quote?format=json&view=detail
+#   YFi::QuoteCollection.new(['vbtlx', 'vigrx']) #http://finance.yahoo.com/webservice/v1/symbols/VBTLX,VIGRX/quote?format=json&view=detail
 require "httparty"
 
 module YFi
